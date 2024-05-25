@@ -1,6 +1,6 @@
 ## Project Name
 
-Made this to become more familiar with GitHub.
+Made this to become more familiar with GitHub. And with creating a website.
 
 Link to the website: https://flying20.github.io/
 
