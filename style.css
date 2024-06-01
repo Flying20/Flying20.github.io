@@ -1,1 +1,4 @@
-p { text-align: left; }
+/* Render color scheme based on user preference */
+:root {
+  color-scheme: light dark;
+}
