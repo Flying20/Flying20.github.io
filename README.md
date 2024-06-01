@@ -4,4 +4,4 @@ Made this to become more familiar with GitHub. And with creating a website.
 
 Link to the website: https://flying20.github.io/
 
-* `The Starspawn is ready to guide you!` on the website acts as a `Hello, World!` message. 😅
+* `The Starspawn is ready to guide you!` on the website acts as a `Hello, World!` message. :sweat_smile:

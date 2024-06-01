@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Personal Website</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="shortcut icon" href="favicon.ico">
-</head>
-<body>
-  <script src="script.js"></script>
-  <p>The Starspawn is ready to guide you!<p>
-</body>
+
+  <head>
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+
+  <body>
+    <h1>Welcome</h1>
+
+    <p>The Starspawn is ready to guide you!</p>
+
+    <p id="time"></p>
+    <script>document.getElementById("time").innerHTML=Date()</script>
+
+    <label for="textbox">Textbox:</label>
+    <input type="text" placeholder="Enter text here" id="textbox" name="textbox">
+    <button type="button" onclick="showText()">Submit</button>
+    <span style="white-space: pre-line"><p id="text"></p></span>
+
+    <script src="script.js"></script>
+  </body>
+
 </html>
