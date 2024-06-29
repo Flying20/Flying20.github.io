@@ -2,3 +2,63 @@
 :root {
   color-scheme: light dark;
 }
+
+.buttonround {
+  aspect-ratio: 1.0;
+  border-radius: 50%;
+  border: none;
+}
+
+/*
+Simple checkbox toggle switch created in CSS.
+The following implementation is found at https://www.w3schools.com/howto/howto_css_switch.asp
+*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.0rem;
+  border-radius: 0.5rem;
+  outline-style: solid;
+  outline-width: 0.1rem;
+  vertical-align: text-top;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: lightgray;
+  transition: 0.5s;
+  border-radius: 0.5rem;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  aspect-ratio: 1;
+  background-color: white;
+  transition: 0.5s;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: gray;
+  border-width: 0.1rem;
+}
+
+input:checked + .slider {
+  background-color: deepskyblue;
+}
+
+input:checked + .slider::before {
+  transform: translateX(0.8rem);
+}
