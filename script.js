@@ -1,20 +1,14 @@
 // Toggles between light and dark mode
 function toggleDarkMode(e) {
-  if (e.checked) {
+  if (e.checked)
     document.documentElement.style.setProperty("color-scheme", "dark");
-    document.getElementById("darkmode2").innerHTML = "&#x2600&#xFE0F";
-  }
-  else {
+  else
     document.documentElement.style.setProperty("color-scheme", "light");
-    document.getElementById("darkmode2").innerHTML = "&#x1F319";
-  }
 }
 
 // Initialize dark mode toggle
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+if (window.matchMedia('(prefers-color-scheme: dark)').matches)
   document.getElementById("darkmode").checked = true;
-  document.getElementById("darkmode2").innerHTML = "&#x2600&#xFE0F";
-}
 
 // Update the time every second
 function updateTime() {
